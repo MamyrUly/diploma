@@ -5,8 +5,21 @@ agrobus/
 │   ├── src/main/java/com/agrobus/...
 │   ├── resources/
 │   └── Dockerfile
-├── frontend/          # React интерфейс
-│   └── public/
+├── frontend/          # React интерфей
+    ├── public/                  # Статичные ресурсы (favicon, index.html и пр.)
+    ├── src/                     # Исходный код React-приложения
+    │   ├── assets/              # Изображения, иконки, стили
+    │   ├── components/          # Повторно используемые компоненты
+    │   ├── pages/               # Отдельные страницы (Home, Login, Profile и т.д.)
+    │   ├── services/            # API-запросы (например, axios-инстанс)
+    │   ├── store/               # Redux или Zustand (если используется)
+    │   ├── hooks/               # Кастомные хуки
+    │   ├── App.jsx              # Главный компонент
+    │   ├── index.js             # Точка входа в приложение
+    │   └── routes.jsx           # Конфигурация маршрутов (React Router)
+    ├── .env                     # Переменные окружения
+    ├── package.json             # Зависимости проекта
+    └── tailwind.config.js       # Конфигурация Tailwind (если используется)
 ├── docs/              # Диаграммы, схемы, архитектура
 └── docker-compose.yml
 ```
